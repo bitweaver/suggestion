@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine  on
+    # Uncomment this if mod_rewrites are not working for you. some hosting services have cranky mod_rewrite
+    #RewriteBase /suggestion/
+    RewriteCond %{SCRIPT_FILENAME}              -f [OR]
+    RewriteCond %{SCRIPT_FILENAME}/index.php    -f
+    RewriteRule ^(.*)$                          - [L]
+    RewriteRule ^(.*)$  index.php?suggestion_id=$1  [L,QSA]
+</IfModule>
