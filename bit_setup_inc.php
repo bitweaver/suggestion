@@ -17,11 +17,6 @@ if( $gBitSystem->isPackageActive( 'suggestion' ) && $gBitUser->hasPermission( 'p
 	);
 	$gBitSystem->registerAppMenu( $menuHash );
 
-	$gLibertySystem->registerService( LIBERTY_SERVICE_SUGGESTION, SUGGESTION_PKG_NAME, array(
-		'content_store_function'		=> 'suggestion_content_store',
-		// 'content_verify_function'		=> 'group_content_verify',
-	) );
-
 	/**
 	 * load up switchboard.
 	 * we need to include bit_setup_inc incase groups gets loaded first.
