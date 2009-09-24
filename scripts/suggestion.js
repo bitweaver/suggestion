@@ -30,6 +30,7 @@
 				var fn = function(rslt, textStatus){
 					$(conf.dialogbox).html( rslt ).show();
 					self.addClickHandlers();
+					$(self).trigger( "onEditSuggestion" );
 				}
 				$.get( editpath, null, fn, 'html' );
 			},
@@ -54,6 +55,7 @@
 			// cancel
 			cancelEditSuggestion: function(){
 				$(conf.dialogbox).hide();
+				$(self).trigger( "onCancelEditSuggestion" );
 			},
 
 			// ui
@@ -66,6 +68,12 @@
 			// event handler registration
 			onStoreSuccess: function(fn) {
                 return bind("onStoreSuccess", fn);
+            },
+			onEditSuggestion: function(fn) {
+                return bind("onEditSuggestion", fn);
+            },
+			onCancelEditSuggestion: function(fn) {
+                return bind("onCancelEditSuggestion", fn);
             }
 		});
 
@@ -89,6 +97,8 @@
 
 			// callback handlers
 			onStoreSucess:null,
+			onEditSuggestion:null,
+			onCancelEditSuggestion:null,
 
 			// api
 			api:false
