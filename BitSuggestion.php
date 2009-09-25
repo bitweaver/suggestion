@@ -1,7 +1,7 @@
 <?php
 /**
-* $Header: /cvsroot/bitweaver/_bit_suggestion/BitSuggestion.php,v 1.1 2009/09/15 15:10:49 wjames5 Exp $
-* $Id: BitSuggestion.php,v 1.1 2009/09/15 15:10:49 wjames5 Exp $
+* $Header: /cvsroot/bitweaver/_bit_suggestion/BitSuggestion.php,v 1.2 2009/09/25 18:42:18 wjames5 Exp $
+* $Id: BitSuggestion.php,v 1.2 2009/09/25 18:42:18 wjames5 Exp $
 */
 
 /**
@@ -9,7 +9,7 @@
 *
 * date created 2009/9/1
 * @author Will James <will@tekimaki.com>
-* @version $Revision: 1.1 $ $Date: 2009/09/15 15:10:49 $ $Author: wjames5 $
+* @version $Revision: 1.2 $ $Date: 2009/09/25 18:42:18 $ $Author: wjames5 $
 * @class BitSuggestion
 */
 
@@ -407,7 +407,7 @@ class BitSuggestion extends LibertyMime {
 			$usersValidate = $gBitSystem->isFeatureActive( 'users_validate_user' );
 			$gBitSystem->setConfig( 'users_validate_user', FALSE );
 			// create new user
-			$reg = $pParamHash;
+			$reg = array( 'real_name' => $pParamHash['real_name'], 'email'=>$pParamHash['email'] );
 			if( empty( $reg['password'] ) ){
 				$reg['password'] = $gBitUser->genPass( 9 );
 			}
