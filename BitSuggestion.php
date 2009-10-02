@@ -1,15 +1,22 @@
 <?php
 /**
-* $Header: /cvsroot/bitweaver/_bit_suggestion/BitSuggestion.php,v 1.2 2009/09/25 18:42:18 wjames5 Exp $
-* $Id: BitSuggestion.php,v 1.2 2009/09/25 18:42:18 wjames5 Exp $
+* $Header: /cvsroot/bitweaver/_bit_suggestion/BitSuggestion.php,v 1.3 2009/10/02 18:51:04 wjames5 Exp $
+* $Id: BitSuggestion.php,v 1.3 2009/10/02 18:51:04 wjames5 Exp $
 */
 
 /**
-* loosely related to package _bit_energymeasures for taking suggestions about such datatypes
+* Copyright (c) 2009 Citizens Union Foundation
+* Funding for the development of this package was provided by the John S. and James L. Knight Foundation.
+* All Rights Reserved. See below for details and a complete list of authors.
+* Licensed under the GNU GENERAL PUBLIC LICENSE. See http://www.gnu.org/copyleft/gpl.html for details 
 *
-* date created 2009/9/1
+* Related to package _bit_energymeasures for taking suggestions about such datatypes
+*
+* Developed by Tekimaki LLC http://tekimaki.com
+* Date created 2009/9/1
+
 * @author Will James <will@tekimaki.com>
-* @version $Revision: 1.2 $ $Date: 2009/09/25 18:42:18 $ $Author: wjames5 $
+* @version $Revision: 1.3 $ $Date: 2009/10/02 18:51:04 $ $Author: wjames5 $
 * @class BitSuggestion
 */
 

@@ -1,8 +1,5 @@
 <?php
-// $Header: /cvsroot/bitweaver/_bit_suggestion/index.php,v 1.1 2009/09/15 15:10:49 wjames5 Exp $
-// Copyright (c) 2004 bitweaver Suggestion
-// All Rights Reserved. See copyright.txt for details and a complete list of authors.
-// Licensed under the GNU LESSER GENERAL PUBLIC LICENSE. See license.txt for details.
+// $Header: /cvsroot/bitweaver/_bit_suggestion/index.php,v 1.2 2009/10/02 18:51:04 wjames5 Exp $
 
 // Initialization
 require_once( '../bit_setup_inc.php' );
