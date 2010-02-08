@@ -1,8 +1,8 @@
 <?php
-// $Header: /cvsroot/bitweaver/_bit_suggestion/list.php,v 1.2 2009/10/02 18:51:04 wjames5 Exp $
+// $Header: /cvsroot/bitweaver/_bit_suggestion/list.php,v 1.3 2010/02/08 21:37:31 wjames5 Exp $
 
 // Initialization
-require_once( '../bit_setup_inc.php' );
+require_once( '../kernel/setup_inc.php' );
 require_once( SUGGESTION_PKG_PATH.'BitSuggestion.php' );
 
 // Is package installed and enabled
