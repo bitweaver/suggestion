@@ -1,6 +1,6 @@
 <?php
 /**
- * @version $Header: /cvsroot/bitweaver/_bit_suggestion/admin/schema_inc.php,v 1.1 2009/09/15 15:10:49 wjames5 Exp $
+ * @version $Header: /cvsroot/bitweaver/_bit_suggestion/admin/schema_inc.php,v 1.2 2010/04/17 22:46:10 wjames5 Exp $
  * @package suggestion
  */
 $tables = array(
@@ -68,6 +68,6 @@ $gBitInstaller->registerPreferences( SUGGESTION_PKG_NAME, array(
 
 // Requirements
 $gBitInstaller->registerRequirements( SUGGESTION_PKG_NAME, array(
-	'liberty' => array( 'min' => '2.1.0' ),
+	'liberty' => array( 'min' => '2.1.4' ),
 ));
 ?>

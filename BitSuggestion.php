@@ -1,7 +1,7 @@
 <?php
 /**
-* $Header: /cvsroot/bitweaver/_bit_suggestion/BitSuggestion.php,v 1.3 2009/10/02 18:51:04 wjames5 Exp $
-* $Id: BitSuggestion.php,v 1.3 2009/10/02 18:51:04 wjames5 Exp $
+* $Header: /cvsroot/bitweaver/_bit_suggestion/BitSuggestion.php,v 1.4 2010/04/17 22:46:10 wjames5 Exp $
+* $Id: BitSuggestion.php,v 1.4 2010/04/17 22:46:10 wjames5 Exp $
 */
 
 /**
@@ -16,7 +16,7 @@
 * Date created 2009/9/1
 
 * @author Will James <will@tekimaki.com>
-* @version $Revision: 1.3 $ $Date: 2009/10/02 18:51:04 $ $Author: wjames5 $
+* @version $Revision: 1.4 $ $Date: 2010/04/17 22:46:10 $ $Author: wjames5 $
 * @class BitSuggestion
 */
 
@@ -51,7 +51,7 @@ class BitSuggestion extends LibertyMime {
 		$this->mContentTypeGuid = BITSUGGESTION_CONTENT_TYPE_GUID;
 		$this->registerContentType( BITSUGGESTION_CONTENT_TYPE_GUID, array(
 			'content_type_guid'   => BITSUGGESTION_CONTENT_TYPE_GUID,
-			'content_description' => 'Suggestion',
+			'content_name' => 'Suggestion',
 			'handler_class'       => 'BitSuggestion',
 			'handler_package'     => 'suggestion',
 			'handler_file'        => 'BitSuggestion.php',
