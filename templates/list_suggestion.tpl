@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_suggestion/templates/list_suggestion.tpl,v 1.1 2009/09/15 15:10:49 wjames5 Exp $ *}
+{* $Header$ *}
 {strip}
 <div class="floaticon">{bithelp}</div>
 

@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_suggestion/templates/edit_suggestion.tpl,v 1.1 2009/09/15 15:10:49 wjames5 Exp $ *}
+{* $Header$ *}
 {strip}
 <div class="edit suggestion">
 	{if $smarty.request.preview}

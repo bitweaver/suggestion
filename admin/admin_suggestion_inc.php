@@ -1,5 +1,5 @@
 <?php
-// $Header: /cvsroot/bitweaver/_bit_suggestion/admin/admin_suggestion_inc.php,v 1.1 2009/09/15 15:10:49 wjames5 Exp $
+// $Header$
 
 require_once( SUGGESTION_PKG_PATH.'BitSuggestion.php' );
 

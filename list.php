@@ -1,5 +1,5 @@
 <?php
-// $Header: /cvsroot/bitweaver/_bit_suggestion/list.php,v 1.3 2010/02/08 21:37:31 wjames5 Exp $
+// $Header$
 
 // Initialization
 require_once( '../kernel/setup_inc.php' );
