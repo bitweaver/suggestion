@@ -384,15 +384,11 @@ class BitSuggestion extends LibertyMime {
 	 * @access public
 	 * @return string URL to the suggestion page
 	 */
-	function getDisplayUrl( $pContentId = NULL, $pParamHash = NULL ) {
+	function getDisplayUrlFromHash( $pParamHash = NULL ) {
 		global $gBitSystem;
 		$ret = NULL;
-		if( @$this->isValid() ) {
-			$suggestionId = $this->mSuggestionId;
-		}elseif( !empty($pParamHash['suggestion_id'] ) ) {
-			$suggestionId = $pParamHash['suggestion_id'];
-		}
-		if( !empty( $suggestionId ) ){
+
+		if( !empty( $pParamHash['suggestion_id'] ) ){
 			if( $gBitSystem->isFeatureActive( 'pretty_urls' ) || $gBitSystem->isFeatureActive( 'pretty_urls_extended' )) {
 				$ret = SUGGESTION_PKG_URL.$suggestionId;
 			} else {
