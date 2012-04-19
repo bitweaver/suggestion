@@ -384,7 +384,7 @@ class BitSuggestion extends LibertyMime {
 	 * @access public
 	 * @return string URL to the suggestion page
 	 */
-	function getDisplayUrlFromHash( $pParamHash = NULL ) {
+	public static function getDisplayUrlFromHash( $pParamHash = NULL ) {
 		global $gBitSystem;
 		$ret = NULL;
 
