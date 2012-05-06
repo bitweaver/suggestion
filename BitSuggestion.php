@@ -45,7 +45,7 @@ class BitSuggestion extends LibertyMime {
 	 * @return void
 	 */
 	function BitSuggestion( $pSuggestionId=NULL, $pContentId=NULL ) {
-		LibertyMime::LibertyMime();
+		parent::__construct();
 		$this->mSuggestionId = $pSuggestionId;
 		$this->mContentId = $pContentId;
 		$this->mContentTypeGuid = BITSUGGESTION_CONTENT_TYPE_GUID;
