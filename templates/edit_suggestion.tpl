@@ -31,7 +31,7 @@
 						{formfeedback warning=$errors.store}
 
 						{if !$gBitUser->isRegistered()}
-							<div class="row">
+							<div class="control-group">
 								{formfeedback error=$errors.validate}
 								{formlabel label="Email Address" for="email"}
 								{forminput}
@@ -39,7 +39,7 @@
 								{/forminput}
 							</div>
 
-							<div class="row">
+							<div class="control-group">
 								{formlabel label="Real name" for="real_name"}
 								{forminput}
 									<input type="text" name="real_name" id="real_name" value="{$smarty.request.real_name}" />
@@ -47,7 +47,7 @@
 							</div>
 						{/if}
 
-						<div class="row">
+						<div class="control-group">
 							{formfeedback warning=$errors.title}
 							{formlabel label="Name Your Plan:" for="title"}
 							{forminput}
@@ -55,7 +55,7 @@
 							{/forminput}
 						</div>
 
-						<div class="row">
+						<div class="control-group">
 							{formfeedback warning=$errors.mwh}
 							{formlabel label="Megawatt Hours / Year" for="mwh"}
 							{forminput}
@@ -63,7 +63,7 @@
 							{/forminput}
 						</div>
 
-						<div class="row">
+						<div class="control-group">
 							{formfeedback warning=$errors.sources}
 							{formlabel label="Share your research with us:" for="sources"}
 							{formhelp note="(links, organizations, scientists etc.)"}
@@ -77,7 +77,7 @@
 							{include file="bitpackage:liberty/edit_services_inc.tpl" serviceFile="content_edit_mini_tpl"}
 						{/if}
 
-						<div class="row submit">
+						<div class="control-group submit">
 							<input type="{if $gBitThemes->isAjaxRequest()}button{else}submit{/if}" name="cancel_suggestion" value="{tr}Cancel{/tr}" />
 							<input type="{if $gBitThemes->isAjaxRequest()}button{else}submit{/if}" name="save_suggestion" value="{tr}Save{/tr}" />
 						</div>
