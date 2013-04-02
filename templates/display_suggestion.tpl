@@ -3,10 +3,10 @@
 	<div class="floaticon">
 		{if $print_page ne 'y'}
 			{if $gContent->hasUpdatePermission()}
-				<a title="{tr}Edit this suggestion{/tr}" href="{$smarty.const.SUGGESTION_PKG_URL}edit.php?suggestion_id={$gContent->mInfo.suggestion_id}">{biticon ipackage="icons" iname="accessories-text-editor" iexplain="Edit Suggestion"}</a>
+				<a title="{tr}Edit this suggestion{/tr}" href="{$smarty.const.SUGGESTION_PKG_URL}edit.php?suggestion_id={$gContent->mInfo.suggestion_id}">{booticon iname="icon-edit" ipackage="icons" iexplain="Edit Suggestion"}</a>
 			{/if}
 			{if $gContent->hasExpungePermission()}
-				<a title="{tr}Remove this suggestion{/tr}" href="{$smarty.const.SUGGESTION_PKG_URL}remove_suggestion.php?suggestion_id={$gContent->mInfo.suggestion_id}">{biticon ipackage="icons" iname="edit-delete" iexplain="Remove Suggestion"}</a>
+				<a title="{tr}Remove this suggestion{/tr}" href="{$smarty.const.SUGGESTION_PKG_URL}remove_suggestion.php?suggestion_id={$gContent->mInfo.suggestion_id}">{booticon iname="icon-trash" ipackage="icons" iexplain="Remove Suggestion"}</a>
 			{/if}
 		{/if}<!-- end print_page -->
 	</div><!-- end .floaticon -->
