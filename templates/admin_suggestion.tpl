@@ -17,7 +17,7 @@
 		{/jstab}
 
 		<div class="control-group submit">
-			<input type="submit" name="suggestion_settings" value="{tr}Change preferences{/tr}" />
+			<input type="submit" class="btn" name="suggestion_settings" value="{tr}Change preferences{/tr}" />
 		</div>
 	{/jstabs}
 {/form}
