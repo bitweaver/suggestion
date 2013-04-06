@@ -4,7 +4,7 @@
 	{if $smarty.request.preview}
 		<h2>Preview {$gContent->mInfo.title|escape}</h2>
 		<div class="preview">
-			{include file="bitpackage:suggestion/display_suggestion.tpl" page=`$gContent->mInfo.suggestion_id`}
+			{include file="bitpackage:suggestion/display_suggestion.tpl" page=$gContent->mInfo.suggestion_id}
 		</div>
 	{/if}
 

@@ -1,5 +1,5 @@
 {strip}
-	<ul>
+	<ul class="dropdown-menu">
 		{if $gBitUser->hasPermission( 'p_suggestion_view')}
 			<li><a class="item" href="{$smarty.const.SUGGESTION_PKG_URL}list.php">{tr}List{/tr}</a></li>
 		{/if}
