@@ -67,10 +67,10 @@
 							{formfeedback warning=$errors.sources}
 							{formlabel label="Share your research with us:" for="sources"}
 							{formhelp note="(links, organizations, scientists etc.)"}
-							{textarea id="souces" name="sources" rows=3 noformat="y"}{$gContent->mInfo.sources}{/textarea}
+							{textarea id="souces" name="sources" rows=3 noformat="y" edit=$gContent->mInfo.sources}
 						</div>
 
-						{textarea name="edit" label="Description:" noformat=false}{$gContent->mInfo.data}{/textarea}
+						{textarea name="edit" label="Description:" noformat=false edit=$gContent->mInfo.data}
 
 						{* any simple service edit options *}
 						{if !$gBitThemes->isAjaxRequest()}
