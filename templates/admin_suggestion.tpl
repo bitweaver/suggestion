@@ -5,7 +5,7 @@
 			{legend legend="List Settings"}
 				<input type="hidden" name="page" value="{$page}" />
 				{foreach from=$formSuggestionLists key=item item=output}
-					<div class="control-group">
+					<div class="form-group">
 						{formlabel label=$output.label for=$item}
 						{forminput}
 							{html_checkboxes name="$item" values="y" checked=$gBitSystem->getConfig($item) labels=false id=$item}
@@ -16,7 +16,7 @@
 			{/legend}
 		{/jstab}
 
-		<div class="control-group submit">
+		<div class="form-group submit">
 			<input type="submit" class="btn btn-default" name="suggestion_settings" value="{tr}Change preferences{/tr}" />
 		</div>
 	{/jstabs}
