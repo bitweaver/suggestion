@@ -100,7 +100,7 @@ class BitSuggestion extends LibertyMime {
 
 				$this->mInfo['creator'] = ( !empty( $result->fields['creator_real_name'] ) ? $result->fields['creator_real_name'] : $result->fields['creator_user'] );
 				$this->mInfo['editor'] = ( !empty( $result->fields['modifier_real_name'] ) ? $result->fields['modifier_real_name'] : $result->fields['modifier_user'] );
-				$this->mInfo['display_name'] = BitUser::getTitle( $this->mInfo );
+				$this->mInfo['display_name'] = BitUser::getTitleFromHash( $this->mInfo );
 				$this->mInfo['display_url'] = $this->getDisplayUrl();
 				$this->mInfo['parsed_data'] = $this->parseData();
 
